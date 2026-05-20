@@ -18,7 +18,7 @@ Questo progetto consiste in uno script Python sviluppato per interfacciarsi e co
 ## Requisiti e Prerequisiti
  
 ### Requisiti Software
-Assicurati di avere installato **Python 3.x** sul tuo sistema. Il codice richiede inoltre la libreria esterna `pyserial`. Puoi installarla eseguendo dal terminale:
+Bisogna assicurarsi di aver installato **Python 3.x** sul proprio sistema. Il codice richiede inoltre la libreria esterna `pyserial`. La si può installare eseguendo dal terminale:
  
 ```bash
 pip install pyserial
@@ -26,7 +26,7 @@ pip install pyserial
  
 ### Configurazione Hardware e Comunicazione
 * **Porta Seriale Predefinita:** `COM3` (Velocità: `9600` baud). 
-> *Nota: Se la tua scheda Arduino è collegata a una porta differente (es. `COM4` su Windows o `/dev/ttyUSB0` su Linux), ricordati di modificare la stringa di inizializzazione `serial.Serial('COM3', 9600)` all'interno del codice.*
+> *Nota: Se la scheda Arduino è collegata a una porta differente (es. `COM4` su Windows o `/dev/ttyUSB0` su Linux), bisogna ricordarsi di modificare la stringa di inizializzazione `serial.Serial('COM3', 9600)` all'interno del codice.*
 * **Formato dei Dati:** Per consentire il corretto funzionamento dello script, l'Arduino deve stampare sulla porta seriale stringhe formattate esattamente come nel seguente esempio:
   `Temp: 23.5 | Gas: 180`
  
